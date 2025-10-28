@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HYDRA CONSULTORES SPA — Instalaciones de Agua Potable y Alcantarillado</title>
+  <meta name="description" content="Proyectos sanitarios, diseño e instalación de redes de agua potable y alcantarillado. Conexiones a matriz, memoria de cálculos y regularizaciones.">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo="> 
+  <style>
+    :root{--accent:#0077b6;--muted:#6b7280;--bg:#f7fafc;--card:#ffffff}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.45;margin:0;background:var(--bg);color:#0f172a}
+    .container{max-width:1100px;margin:0 auto;padding:32px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#00b4d8);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    h1{margin:0;font-size:20px}
+    p.lead{color:var(--muted);margin:8px 0 0}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:24px}
+    .card{background:var(--card);border-radius:14px;padding:22px;box-shadow:0 6px 18px rgba(2,6,23,0.06)}
+    .services{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:16px}
+    .service{padding:12px;border-radius:10px;border:1px solid #eef2f6}
+
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+    .btn.secondary{background:transparent;color:var(--accent);border:1px solid rgba(0,119,182,0.12)}
+
+    footer{margin-top:32px;padding:18px 0;color:var(--muted);font-size:14px;text-align:center}
+
+    /* WhatsApp floating button */
+    .wa-btn{position:fixed;right:18px;bottom:18px;border-radius:50%;width:64px;height:64px;display:flex;align-items:center;justify-content:center;background:#25D366;box-shadow:0 8px 22px rgba(2,6,23,0.15);border:4px solid #fff}
+    .wa-btn img{width:36px;height:36px}
+
+    @media(max-width:880px){.hero{grid-template-columns:1fr;}.container{padding:20px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">HC</div>
+        <div>
+          <h1>HYDRA CONSULTORES SPA</h1>
+          <p class="lead">Ingeniería sanitaria • Conexiones de agua potable y alcantarillado • Regularizaciones</p>
+        </div>
+      </div>
+      <nav aria-label="Contacto">
+        <a class="btn" href="#contact" onclick="openWhatsApp()">Contactar por WhatsApp</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <section class="card">
+        <h2>Soluciones técnicas para tu proyecto</h2>
+        <p class="lead">Diseño y ejecución de instalaciones de agua potable y alcantarillado para casas, galpones y proyectos. Memorias de cálculo, especificaciones técnicas y trámites de regularización.</p>
+
+        <div class="services">
+          <div class="service">
+            <strong>Conexiones a matriz</strong>
+            <div style="color:var(--muted);font-size:14px;margin-top:6px">Instalación y trámites ante empresas sanitarias.</div>
+          </div>
+          <div class="service">
+            <strong>Redes internas</strong>
+            <div style="color:var(--muted);font-size:14px;margin-top:6px">Dimensionamiento, materiales (HDPE, cobre), y detalles constructivos.</div>
+          </div>
+          <div class="service">
+            <strong>Memorias y cálculos</strong>
+            <div style="color:var(--muted);font-size:14px;margin-top:6px">Estimación de caudales y memoria técnica para permisos.</div>
+          </div>
+          <div class="service">
+            <strong>Regularizaciones</strong>
+            <div style="color:var(--muted);font-size:14px;margin-top:6px">Gestión ante DOM, Aguas del Valle, SISS y MINSAL.</div>
+          </div>
+        </div>
+
+        <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn" href="#contact" onclick="openWhatsApp()">Enviar WhatsApp</a>
+          <a class="btn secondary" href="mailto:carvajalcecy@gmail.com">Enviar correo</a>
+        </div>
+
+        <section id="about" style="margin-top:18px">
+          <h3>Sobre Cecilia Carvajal</h3>
+          <p style="color:var(--muted);font-size:14px">Ingeniera Civil y proyectista sanitaria inscrita en MINSAL y Aguas del Valle. Experiencia en gestión y diseño de recursos hídricos y proyectos sanitarios.</p>
+        </section>
+      </section>
+
+      <aside class="card" style="display:flex;flex-direction:column;gap:12px">
+        <div>
+          <h3>Datos de contacto</h3>
+          <p style="margin:6px 0"><strong>Teléfono / WhatsApp:</strong><br><span id="phoneDisplay">+56 9 9375 6136</span></p>
+          <p style="margin:6px 0"><strong>Email:</strong><br>carvajalcecy@gmail.com</p>
+          <p style="margin:6px 0"><strong>Ubicación:</strong><br>Región de Coquimbo, Chile</p>
+        </div>
+
+        <div style="margin-top:auto">
+          <h4>Servicios rápidos</h4>
+          <ul style="margin:6px 0 0 18px;color:var(--muted);font-size:14px">
+            <li>Presupuesto y cotización</li>
+            <li>Revisión de planos</li>
+            <li>Regularizaciones y permisos</li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      © <span id="year"></span> HYDRA CONSULTORES SPA — Diseño profesional de instalaciones sanitarias
+    </footer>
+  </div>
+
+  <!-- WhatsApp floating button -->
+  <a class="wa-btn" href="#" aria-label="Contactar por WhatsApp" onclick="openWhatsApp();return false;">
+    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23fff' d='M20.52 3.48A11.94 11.94 0 0 0 12 0C5.373 0 .001 5.373 0 12c0 2.11.548 4.167 1.588 5.98L0 24l6.27-1.625A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12 0-3.209-1.253-6.2-3.48-8.52zM12 21c-1.89 0-3.67-.5-5.23-1.36l-.38-.18-3.72.96.99-3.63-.23-.38A8.964 8.964 0 0 1 3 12c0-4.97 4.03-9 9-9s9 4.03 9 9-4.03 9-9 9zm4.74-6.47c-.2-.09-1.18-.58-1.36-.64-.18-.06-.31-.09-.45.09-.14.18-.54.64-.66.77-.12.13-.24.15-.44.05-.2-.09-.85-.31-1.62-.99-.6-.54-1.01-1.21-1.13-1.41-.12-.2-.01-.31.09-.4.09-.09.2-.24.3-.36.1-.12.13-.2.2-.33.07-.13.03-.25-.01-.35-.05-.1-.45-1.08-.62-1.48-.16-.39-.33-.33-.45-.33-.12 0-.26-.01-.4-.01-.14 0-.36.05-.55.25-.19.2-.72.7-.72 1.71 0 1.01.74 1.99.84 2.13.1.14 1.46 2.36 3.54 3.31 2.08.95 2.08.63 2.45.59.36-.04 1.18-.48 1.35-.95.17-.47.17-.87.12-.95-.05-.08-.2-.12-.4-.2z'/></svg>" alt="WhatsApp">
+  </a>
+
+  <script>
+    // --- Edítalo aquí: teléfono y mensaje por defecto (formato internacional sin espacios ni signos) ---
+    const PHONE = '56993756136'; // ejemplo: 569XXXXXXXX
+    const DEFAULT_MESSAGE = encodeURIComponent('Hola, soy Cecilia de HYDRA CONSULTORES. Quisiera solicitar información / cotización.');
+
+    // Rellena el año automáticamente
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Muestra el teléfono en formato legible (puedes cambiarlo si prefieres otro formato)
+    document.getElementById('phoneDisplay').textContent = '+56 9 9375 6136';
+
+    function openWhatsApp(){
+      // usa el formato wa.me — abre en móvil o WhatsApp Web en escritorio
+      const url = `https://wa.me/${PHONE}?text=${DEFAULT_MESSAGE}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
